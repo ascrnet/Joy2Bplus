@@ -32,7 +32,6 @@ NMIEN  = $d40e
 	
 ; Inicio del programa
 inicio
-	mva #0 ATRACT
 	mva #0 AUDCTL
 	mva #40 AUDF1
 	mva #50 AUDF2
@@ -45,7 +44,8 @@ inicio
 	mva #$f COLOR1
 
 ; Control del joystick 
-joystick	
+joystick
+	mva #0 ATRACT
 	lda STICK0
 	pha
 derecha
