@@ -1,4 +1,4 @@
-# TestJoy2B+
+# Joy 2B+
 
 ![joystick](https://github.com/ascrnet/TestJoy2B/blob/master/img/joy2bplus.png)
 
