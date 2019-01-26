@@ -42,6 +42,17 @@ inicio
 	mva #$c0 NMIEN
 	mva #$30 COLOR2
 	mva #$f COLOR1
+	
+; Valida Joystick 2b+
+joy2b
+	lda PADDL0
+	cmp #1
+	beq existe
+no_joystick 
+	mensaje error
+	jmp joy2b
+existe 
+	mensaje ok
 
 ; Control del joystick 
 joystick
@@ -78,12 +89,12 @@ boton1
 	anima 145,linea2+18,AUDC2
 boton2
 	lda PADDL0
-	cmp #1
+	cmp #$e4
 	bne boton3
 	anima 146,linea2+23,AUDC3
 boton3
 	lda PADDL1
-	cmp #1
+	cmp #$e4
 	bne fin_joystick
 	anima 147,linea2+28,AUDC4
 fin_joystick
@@ -96,6 +107,16 @@ fin_joystick
 	lda:cmp:req 20
 	mva #0 :3
 	mva #:1 :2
+.endm
+
+.macro mensaje :texto
+	ldx #0
+lee_texto
+	lda :1,x
+	sta mensajes,x
+	inx
+	cpx #39
+	bne lee_texto
 .endm
 
 ; Diseño DL (Display list)
@@ -118,7 +139,7 @@ dl
 	.byte $42	
 	.word linea
 	.byte $70,$70,$42
-	.word atariware
+	.word mensajes
 	.byte $41
 	.word dl
 
@@ -162,12 +183,19 @@ linea3
 	.byte 75,213,76
 :2	.byte " "
 	.byte 75,213,76
-:9	.byte " "
+:10	.byte " "
 
-atariware
+mensajes
+:39 .byte " " 
+
+
+ok
 :8	.byte " "
 	.byte "http://www.atariware.cl"
 :9	.byte " "
+
+error
+	.byte "   Joystick 2B+ ","NO CONECTADO"*," al ATARI  "
 
 ; Diseño del DLI (Display list interrupts)
 dli
