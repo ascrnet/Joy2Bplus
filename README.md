@@ -1,8 +1,10 @@
 # Joystick 2B+
 
-![joystick](https://github.com/ascrnet/TestJoy2B/blob/master/img/joy2bplus.png)
+La idea es hacer un joystick modificado para soportar 2 o 3 botones para un ATARI 2600/XL/XE. Recordar que Atari por defecto solo soporta un botón.
 
-La idea es hacer un joystick modificado para soportar 2 o 3 botones para un ATARI XL-XE. Recordar que Atari por defecto solo soporta un botón.
+> The idea is to make a modified joystick to support 2 or 3 buttons for an ATARI 2600/XL/XE. Remember that Atari by default only supports one button.
+
+![joystick](https://github.com/ascrnet/TestJoy2B/blob/master/img/joy2bplus.png)
 
 ![testjou](https://github.com/ascrnet/TestJoy2B/blob/master/img/testjoy2b.png)
 
