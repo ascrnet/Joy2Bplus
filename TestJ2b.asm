@@ -2,6 +2,7 @@
 ; Por Abel Carrasco
 ;------------------------------
 ; Atariware.cl 01/05/2019
+; 06/04/2019 - Cambio gráficos
 
 RTCLOK = $14
 ATRACT = $4d
@@ -156,16 +157,16 @@ linea1
 :10	.byte " "
 	.byte 0,92,0
 :4	.byte " "
-	.byte 73,85,79
+	.byte 72," "*,74
 :2	.byte " "
-	.byte 73,85,79
+	.byte 72," "*,74
 :2	.byte " "
-	.byte 73,85,79
+	.byte 72," "*,74
 :10	.byte " "
 
 linea2
 :10	.byte " "
-	.byte 94," "*,95
+	.byte 94,"O",95
 :4	.byte " "
 	.byte " "*,"1"*," "*
 :2	.byte " "
@@ -178,11 +179,11 @@ linea3
 :10	.byte " "
 	.byte 0,93,0
 :4	.byte " "
-	.byte 75,213,76
+	.byte 202," "*,200
 :2	.byte " "
-	.byte 75,213,76
+	.byte 202," "*,200
 :2	.byte " "
-	.byte 75,213,76
+	.byte 202," "*,200
 :10	.byte " "
 
 mensajes
