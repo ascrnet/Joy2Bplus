@@ -16,6 +16,6 @@ Los detalles técnicos para proceder hacer la modificación visite el [Wiki](../
 
 > The technical details to proceed to make the modification visit the [Wiki](../../wiki) here.
 
-También se modificaron algunos [juegos](https://github.com/ascrnet/TestJoy2B/tree/master/games) para usar este joystick y no olvidar el [foro](http://www.atariware.cl/aw/foro/viewtopic.php?f=4&t=3156) donde se va mostrando el avance del proyecto.
+También se modificaron algunos [juegos](https://github.com/ascrnet/TestJoy2B/tree/master/games) para usar este joystick.
 
-> Some [games](https://github.com/ascrnet/TestJoy2B/tree/master/games) were also modified to use this joystick and do not forget the [forum](http://www.atariware.cl/aw/foro/viewtopic.php?f=4&t=3156) where the progress of the project is shown.
+> Some [games](https://github.com/ascrnet/TestJoy2B/tree/master/games) were also modified to use this joystick
