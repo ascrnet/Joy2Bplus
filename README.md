@@ -1,4 +1,4 @@
-# Joystick 2B+
+# Joy 2B+
 
 La idea es hacer un joystick modificado para soportar 2 o 3 botones para un ATARI 2600 o XL/XE. Recordar que Atari por defecto solo soporta un botón.
 
