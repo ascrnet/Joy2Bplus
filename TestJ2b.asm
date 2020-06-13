@@ -47,8 +47,8 @@ inicio
 ; Valida Joystick 2b+
 joy2b
 	lda PADDL0
-	cmp #1
-	beq existe
+	cmp #$e4
+	bne existe
 no_joystick 
 	mensaje error
 	jmp joy2b
