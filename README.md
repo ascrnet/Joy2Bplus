@@ -9,8 +9,8 @@ The technical details to proceed to make the modification visit the [Wiki](../..
 ![joy2b](https://github.com/ascrnet/TestJoy2B/blob/master/img/testjoy2b.png)
 
 The testing program and the source of this, which was done in [MADS](http://mads.atari8.info) assembler, is provided.
+If you do not want to assemble, you can lower the [XEX](https://github.com/ascrnet/Joy2Bplus/releases/tag/1.2)
 
 A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available games and how to test them on Altirra emulator
 
 > **Note :** The modified games may also be compatible with a Genesis controller, but only 2 buttons will work. 
-
