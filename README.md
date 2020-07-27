@@ -8,4 +8,7 @@ The testing program and the source of this, which was done in [MADS](http://mads
 
 The technical details to proceed to make the modification visit the [Wiki](../../wiki) here.
 
-Some [games](https://github.com/ascrnet/TestJoy2B/tree/master/games) were also modified to use this joystick.
+A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available games and how to test them on Altirra emulator
+
+> **Note :** The modified games may also be compatible with a Genesis controller, but only 2 buttons will work. 
+
