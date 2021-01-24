@@ -6,7 +6,7 @@ This small modification is to adapt two or three buttons to a joystick for ATARI
 
 Some advantages of this project :
 
- - More than 40 games are available and growing in the future
+ - More than 40 [games](https://github.com/ascrnet/Joy2Bplus/wiki/Games) are available and growing in the future
  - Only the joystick needs to be modified by adding a resistor for each button added
  - Compatible with some sega gamepad to use two buttons
  - For developers it can be emulated from Altirra by configuring a custom joystick
@@ -30,13 +30,21 @@ this is a small program to test the buttons, it was developed in assembler using
 
 A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available games and how to test them on Altirra emulator
 
-> **Note :** The modified games may also be compatible with a Genesis controller, but only 2 buttons will work. 
 
+## ArcadeR joystick
 
-## ArcadeR mod
-
-Thanks to the user Mr Robot from atariage for sharing this small modification to this joystick
+Thanks to friend Mr Robot from [atariage](https://atariage.com/forums/topic/278884-2-button-joystick/?do=findComment&comment=4670068) for sharing this small modification to this joystick
 
 ![joyarcader](https://github.com/ascrnet/TestJoy2B/blob/master/img/arcaderJoy.jpeg)
 
 just follow the steps shown in the picture
+
+## Retro receiver for SEGA
+
+This adaptation is to make compatible this wireless gamepad with Joy 2B+, made by the friend Eyvind Bernhardsen from Atariage.
+adaptersega.jpeg
+
+![adaptersega](https://github.com/ascrnet/TestJoy2B/blob/master/img/adaptersega.jpeg)
+
+All the information on how to make the project are in his own [repository](https://github.com/eyvind/sega-adapter/).
+
