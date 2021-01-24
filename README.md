@@ -11,13 +11,19 @@ Some advantages of this project :
  - Compatible with some sega gamepad to use two buttons
  - For developers it can be emulated from Altirra by configuring a custom joystick
  - Modifications of some commercial joysticks are also available
+ - A test program is provided for proper testing of all buttons
+
+## Hardware changes
 
 The technical details to proceed to perform the modification are documented [here](../../wiki/Instructions)
 
+## Testing program
+
 ![joy2b](https://github.com/ascrnet/TestJoy2B/blob/master/img/testjoy2b.png)
 
-The testing program and the source of this, which was done in [MADS](http://mads.atari8.info) assembler, is provided.
-If you do not want to assemble, you can lower the [XEX](https://github.com/ascrnet/Joy2Bplus/releases/tag/1.2)
+this is a small program to test the buttons, it was developed in assembler using [MADS](http://mads.atari8.info) and right here is the source code and its [executable](https://github.com/ascrnet/Joy2Bplus/releases/tag/1.2).
+ 
+## Games
 
 A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available games and how to test them on Altirra emulator
 
