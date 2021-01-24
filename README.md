@@ -33,16 +33,15 @@ A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available
 
 ## ArcadeR joystick
 
-Thanks to friend Mr Robot from [atariage](https://atariage.com/forums/topic/278884-2-button-joystick/?do=findComment&comment=4670068) for sharing this small modification to this joystick
+Thanks to friend Mr Robot from [Atariage](https://atariage.com/forums/topic/278884-2-button-joystick/?do=findComment&comment=4670068) for sharing this small modification to this joystick
 
 ![joyarcader](https://github.com/ascrnet/TestJoy2B/blob/master/img/arcaderJoy.jpeg)
 
-just follow the steps shown in the picture
+Just follow the steps shown in the picture
 
 ## Retro receiver for SEGA
 
-This adaptation is to make compatible this wireless gamepad with Joy 2B+, made by the friend Eyvind Bernhardsen from Atariage.
-adaptersega.jpeg
+This adaptation is to make compatible this wireless gamepad with Joy 2B+, made by the friend Eyvind Bernhardsen from [Atariage](https://atariage.com/forums/topic/316068-diy-sega-mega-drive-genesis-adapter/).
 
 ![adaptersega](https://github.com/ascrnet/TestJoy2B/blob/master/img/adaptersega.jpeg)
 
