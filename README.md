@@ -37,6 +37,6 @@ A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available
 
 Thanks to the user Mr Robot from atariage for sharing this small modification to this joystick
 
-![joyarcader](https://github.com/ascrnet/TestJoy2B/blob/master/img/arcaderJoy.jpeg|width=600px)
+![joyarcader](https://github.com/ascrnet/TestJoy2B/blob/master/img/arcaderJoy.jpeg)
 
 just follow the steps shown in the picture
