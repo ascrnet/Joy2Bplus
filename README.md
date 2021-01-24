@@ -1,10 +1,18 @@
 # Joy 2B+
 
-The idea is to make a modified joystick to support 2 or 3 buttons for an ATARI 2600 or XL/XE. Remember that Atari by default only supports one button.
-
 ![joy2b](https://github.com/ascrnet/TestJoy2B/blob/master/img/joy2bplus.png)
 
-The technical details to proceed to make the modification visit the [Wiki](../../wiki) here.
+This small modification is to adapt two or three buttons to a joystick for ATARI 2600/XL/XE.
+
+Some advantages of this project :
+
+ - More than 40 games are available and growing in the future
+ - Only the joystick needs to be modified by adding a resistor for each button added
+ - Compatible with some sega gamepad to use two buttons
+ - For developers it can be emulated from Altirra by configuring a custom joystick
+ - Modifications of some commercial joysticks are also available
+
+The technical details to proceed to perform the modification are documented [here](../../wiki/Instructions)
 
 ![joy2b](https://github.com/ascrnet/TestJoy2B/blob/master/img/testjoy2b.png)
 
