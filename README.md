@@ -36,6 +36,6 @@ A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available
 ## ArcadeR mod
 
 Thanks to the user Mr Robot from atariage for sharing this small modification to this joystick
-![joyarcader](https://github.com/ascrnet/TestJoy2B/blob/master/img/testjoy2b.png | width=600 )
+![joyarcader](https://github.com/ascrnet/TestJoy2B/blob/master/img/arcaderJoy.jpeg|width=600px)
 
 just follow the steps shown in the picture
