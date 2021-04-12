@@ -10,10 +10,14 @@ VDSLST = $200
 SDLSTL = $230
 PADDL0 = $270
 PADDL1 = $271
+PADDL2 = $272
+PADDL3 = $273
 STICK0 = $278
+STICK1 = $279
 COLOR1 = $2c5
 COLOR2 = $2c6
 STRIG0 = $d010
+STRIG1 = $d011
 COLPF0 = $d016
 COLBK  = $d01a
 AUDF1  = $d200
@@ -30,95 +34,179 @@ WSYNC  = $d40a
 NMIEN  = $d40e
 
 	org $2000
-	
+
 ; Inicio del programa
 inicio
 	mva #0 AUDCTL
-	mva #40 AUDF1
-	mva #50 AUDF2
-	mva #60 AUDF3
-	mva #70 AUDF4
+	mva #59 AUDF1
+	mva #71 AUDF2
+	mva #84 AUDF3
+	mva #107 AUDF4
 	mwa #dl SDLSTL
 	mwa #dli VDSLST
 	mva #$c0 NMIEN
 	mva #$30 COLOR2
 	mva #$f COLOR1
-	
-; Valida Joystick 2b+
-joy2b
-	lda PADDL0
-	cmp #1
-	beq existe
-no_joystick 
-	mensaje error
-	jmp joy2b
-existe 
-	mensaje ok
 
-; Control del joystick 
+; Control del joystick
 joystick
 	mva #0 ATRACT
 	lda STICK0
-	pha
-derecha
-	pla
-	pha
-	and #8
-	bne izquierda
-	anima 95,linea2+12,AUDC1
-izquierda
-	pla
-	pha
-	and #4
-	bne abajo	
-	anima 94,linea2+10,AUDC1	
-abajo
-	pla
-	pha
-	and #2
-	bne arriba
-	anima 93,linea3+11,AUDC1	
-arriba
-	pla
-	pha
-	and #1
-	bne boton1
-	anima 92,linea1+11,AUDC1	
-boton1
+	drawDirection #%0101, #%0000, #$47, joy1_1+10	; up + left
+	drawDirection #%1101, #%1100, #$7c, joy1_1+11	; up
+	drawDirection #%1001, #%0000, #$46, joy1_1+12	; up + right
+	drawDirection #%0111, #%0011, #$52, joy1_2+10	; left
+	drawDirection #%1011, #%0011, #$52, joy1_2+12	; right
+	drawDirection #%0110, #%0000, #$46, joy1_3+10	; down + left
+	drawDirection #%1110, #%1100, #$7c, joy1_3+11	; down
+	drawDirection #%1010, #%0000, #$47, joy1_3+12	; down + right
+	setVolume prev_s1, vol_s1
+
+	lda STICK1
+	drawDirection #%0101, #%0000, #$47, joy2_1+10	; up + left
+	drawDirection #%1101, #%1100, #$7c, joy2_1+11	; up
+	drawDirection #%1001, #%0000, #$46, joy2_1+12	; up + right
+	drawDirection #%0111, #%0011, #$52, joy2_2+10	; left
+	drawDirection #%1011, #%0011, #$52, joy2_2+12	; right
+	drawDirection #%0110, #%0000, #$46, joy2_3+10	; down + left
+	drawDirection #%1110, #%1100, #$7c, joy2_3+11	; down
+	drawDirection #%1010, #%0000, #$47, joy2_3+12	; down + right
+	setVolume prev_s2, vol_s2
+
+	sound vol_s1, vol_s2, AUDC1
+
+
+; Buttons
 	lda STRIG0
-	bne boton2
-	anima 145,linea2+18,AUDC2
-boton2
+	readButton #$01, #"1", joy1_2+18, vol_a1
+	lda STRIG1
+	readButton #$10, #"1", joy2_2+18, vol_a2
+	sound vol_a1, vol_a2, AUDC2
+
 	lda PADDL0
 	cmp #$e4
-	bne boton3
-	anima 146,linea2+23,AUDC3
-boton3
+	readButton #$02, #"2", joy1_2+23, vol_b1
+	lda PADDL2
+	cmp #$e4
+	readButton #$20, #"2", joy2_2+23, vol_b2
+	sound vol_b1, vol_b2, AUDC3
+
 	lda PADDL1
 	cmp #$e4
-	bne fin_joystick
-	anima 147,linea2+28,AUDC4
-fin_joystick
+	readButton #$04, #"3", joy1_2+28, vol_c1
+	lda PADDL3
+	cmp #$e4
+	readButton #$40, #"3", joy2_2+28, vol_c2
+	sound vol_c1, vol_c2, AUDC4
+
+	ldx #0
+	ldy #3
+delay
+	dex
+	bne delay
+	dey
+	bne delay
 	jmp joystick
 
-; Macro que anima el caracter 
-.macro anima :caract :linea :tono
-	mva #:1-128 :2
-	mva #$af :3
-	lda:cmp:req 20
-	mva #0 :3
-	mva #:1 :2
+
+; The drawDirection macro pushes the accumulator to the stack on entry
+; and pops it back off on exit to allow chaining.
+
+.macro drawDirection mask, value, char, pos
+	pha
+	and :mask
+	cmp :value
+	bne clear
+	lda :char
+	bne draw
+clear
+	lda #0
+draw
+	sta :pos
+	pla
 .endm
 
-.macro mensaje :texto
-	ldx #0
-lee_texto
-	lda :1,x
-	sta mensajes,x
-	inx
-	cpx #39
-	bne lee_texto
+.macro setVolume prev, vol
+	cmp :prev
+	beq unchanged
+	sta :prev
+	cmp #$f
+	beq not_held
+	lda #$8f
+	bne setvol
+not_held
+	lda #0
+	beq setvol
+unchanged
+	lda :vol
+	beq skip
+	sec
+	sbc #1
+setvol
+	sta :vol
+skip
 .endm
+
+.macro sound v1, v2, channel
+	lda :v1
+	cmp :v2
+	scs:lda :v2
+	lsr
+	lsr
+	lsr
+	lsr
+	seq:ora #$a0
+	sta :channel
+.endm
+
+.macro readButton mask, char, pos, vol
+	beq pressed
+	lda :exists
+	ora :mask
+	sta :exists
+	mva :char+128 :pos
+	lda #0
+	beq setvol
+pressed
+	lda :exists
+	and :mask
+	beq next
+	mva :char :pos
+	lda :vol
+	bne decay
+	lda #$8f
+	bne setvol
+decay
+	cmp #$f
+	bcc next
+	sbc #1
+setvol
+	sta :vol
+next
+.endm
+
+exists
+	.byte 0
+vol_s1
+	.byte 0
+vol_s2
+	.byte 0
+prev_s1
+	.byte 0
+prev_s2
+	.byte 0
+vol_a1
+	.byte 0
+vol_a2
+	.byte 0
+vol_b1
+	.byte 0
+vol_b2
+	.byte 0
+vol_c1
+	.byte 0
+vol_c2
+	.byte 0
 
 ; Diseño DL (Display list)
 dl
@@ -132,19 +220,30 @@ dl
 	.byte $42
 	.word linea
 	.byte $42
-	.word linea1
+	.word joy1_1
 	.byte $42
-	.word linea2
+	.word joy1_2
 	.byte $42
-	.word linea3
-	.byte $42	
+	.word joy1_3
+	.byte $42
+	.word linea
+	.byte $70
+	.byte $42
+	.word linea
+	.byte $42
+	.word joy2_1
+	.byte $42
+	.word joy2_2
+	.byte $42
+	.word joy2_3
+	.byte $42
 	.word linea
 	.byte $70,$70,$42
 	.word mensajes
 	.byte $41
 	.word dl
 
-; Diseño de textos	
+; Diseño de textos
 title
 	.byte "   TESTER JOY 2B+   "
 author
@@ -152,8 +251,8 @@ author
 
 linea
 :40	.byte " "
-		
-linea1
+
+joy1_1
 :10	.byte " "
 	.byte 0,92,0
 :4	.byte " "
@@ -164,18 +263,51 @@ linea1
 	.byte 72," "*,74
 :10	.byte " "
 
-linea2
+joy1_2
 :10	.byte " "
 	.byte 94,"O",95
 :4	.byte " "
-	.byte " "*,"1"*," "*
+	.byte "   "*
 :2	.byte " "
-	.byte " "*,"2"*," "*
+	.byte "   "*
 :2	.byte " "
-	.byte " "*,"3"*," "*
+	.byte "   "*
 :10	.byte " "
 
-linea3
+joy1_3
+:10	.byte " "
+	.byte 0,93,0
+:4	.byte " "
+	.byte 202," "*,200
+:2	.byte " "
+	.byte 202," "*,200
+:2	.byte " "
+	.byte 202," "*,200
+:10	.byte " "
+
+joy2_1
+:10	.byte " "
+	.byte 0,92,0
+:4	.byte " "
+	.byte 72," "*,74
+:2	.byte " "
+	.byte 72," "*,74
+:2	.byte " "
+	.byte 72," "*,74
+:10	.byte " "
+
+joy2_2
+:10	.byte " "
+	.byte 94,"O",95
+:4	.byte " "
+	.byte "   "*
+:2	.byte " "
+	.byte "   "*
+:2	.byte " "
+	.byte "   "*
+:10	.byte " "
+
+joy2_3
 :10	.byte " "
 	.byte 0,93,0
 :4	.byte " "
@@ -187,16 +319,9 @@ linea3
 :10	.byte " "
 
 mensajes
-:39 .byte " " 
-
-
-ok
-:8	.byte " "
-	.byte "http://www.atariware.cl"
 :9	.byte " "
-
-error
-	.byte "   Joystick 2B+ ","NO CONECTADO"*," al ATARI  "
+	.byte "http://www.atariware.cl"
+:8	.byte " "
 
 ; Diseño del DLI (Display list interrupts)
 dli
