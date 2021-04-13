@@ -1,13 +1,13 @@
-; Programa Test Joystick 2b+
-; Por Abel Carrasco
-;------------------------------
+; 2B+ Joystick test program
+; By Abel Carrasco
+;--------------------------------------------------------------------------------
 ; 01/05/2019 - first version 
 ; 06/04/2019 - change graphics
 ; 11/04/2021 - changes shared by Eyvind Bernhardsen :
-;			 * allow testing of non-Joy2B sticks
-;			 * buttons 2 and 3 only appear if they are present
-;			 * tweak and add decay to the sounds
-;			 * make the direction rose point in eight directions instead of four
+;              * allow testing of non-Joy2B sticks
+;              * buttons 2 and 3 only appear if they are present
+;              * tweak and add decay to the sounds
+;              * make the direction rose point in eight directions instead of four
 ; 12/04/2021 - change of text to english and new version 
 
 RTCLOK = $14
