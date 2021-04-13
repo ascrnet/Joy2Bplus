@@ -23,7 +23,9 @@ The technical details to proceed to perform the modification are documented [her
 
 ![joy2b](https://github.com/ascrnet/TestJoy2B/blob/master/img/testjoy2b.png)
 
-this is a small program to test the buttons, it was developed in assembler using [MADS](http://mads.atari8.info) and right here is the source code and its [executable](https://github.com/ascrnet/Joy2Bplus/releases/tag/1.2).
+this is a small program to test the buttons, it was developed in assembler using [MADS](http://mads.atari8.info) and right here is the source code and its [executable](https://github.com/ascrnet/Joy2Bplus/releases).
+
+Thank you Eyvind Bernhardsen for your improvements to the test program.
 
 
 ## Games
