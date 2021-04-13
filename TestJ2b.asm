@@ -1,8 +1,14 @@
 ; Programa Test Joystick 2b+
 ; Por Abel Carrasco
 ;------------------------------
-; Atariware.cl 01/05/2019
-; 06/04/2019 - Cambio gráficos
+; 01/05/2019 - first version 
+; 06/04/2019 - change graphics
+; 11/04/2021 - changes shared by Eyvind Bernhardsen :
+;			 * allow testing of non-Joy2B sticks
+;			 * buttons 2 and 3 only appear if they are present
+;			 * tweak and add decay to the sounds
+;			 * make the direction rose point in eight directions instead of four
+; 12/04/2021 - change of text to english and new version 
 
 RTCLOK = $14
 ATRACT = $4d
@@ -35,8 +41,8 @@ NMIEN  = $d40e
 
 	org $2000
 
-; Inicio del programa
-inicio
+; Program start
+start
 	mva #0 AUDCTL
 	mva #59 AUDF1
 	mva #71 AUDF2
@@ -48,7 +54,7 @@ inicio
 	mva #$30 COLOR2
 	mva #$f COLOR1
 
-; Control del joystick
+; Joystick control
 joystick
 	mva #0 ATRACT
 	lda STICK0
@@ -208,7 +214,7 @@ vol_c1
 vol_c2
 	.byte 0
 
-; Diseño DL (Display list)
+; Display list
 dl
 :3	.byte $70
 	.byte $70+$80
@@ -218,7 +224,7 @@ dl
 	.word author
 	.byte $70,$70
 	.byte $42
-	.word linea
+	.word blankline
 	.byte $42
 	.word joy1_1
 	.byte $42
@@ -226,10 +232,10 @@ dl
 	.byte $42
 	.word joy1_3
 	.byte $42
-	.word linea
+	.word blankline
 	.byte $70
 	.byte $42
-	.word linea
+	.word blankline
 	.byte $42
 	.word joy2_1
 	.byte $42
@@ -237,9 +243,10 @@ dl
 	.byte $42
 	.word joy2_3
 	.byte $42
-	.word linea
+	.word blankline
 	.byte $70,$70,$42
-	.word mensajes
+	.word messages
+	.byte $02
 	.byte $41
 	.word dl
 
@@ -247,9 +254,9 @@ dl
 title
 	.byte "   TESTER JOY 2B+   "
 author
-	.byte "  POR ASCRNET 2019  "
+	.byte "  POR ASCRNET 2021  "
 
-linea
+blankline
 :40	.byte " "
 
 joy1_1
@@ -318,12 +325,15 @@ joy2_3
 	.byte 202," "*,200
 :10	.byte " "
 
-mensajes
-:9	.byte " "
-	.byte "http://www.atariware.cl"
-:8	.byte " "
+messages
+	dta " Buttons "
+	dta "2"*
+	dta " and "
+	dta "3"*
+	dta " will be activated when "
+	dta "  a joystick with support is connected  "
 
-; Diseño del DLI (Display list interrupts)
+; Display list interrupts
 dli
 	phr
 	ldx #$0
@@ -345,10 +355,10 @@ dli_color2
 	plr
 	rti
 
-; Colores de DLIs
+; DLI colors
 dli_colores1
 	.byte $b0,$b0,$b0,$bf,$bf,$bc,$bc,$ba,$ba,$b8,$b8,$b6,$b6,$b4,$b4,$f
 dli_colores2
 	.byte $0,$0,$0,$2a,$28,$24,$24,$24,$24,$24,$24,$24,$24,$24,$24,$28,$2a,$0
 
-	run inicio
+	run start

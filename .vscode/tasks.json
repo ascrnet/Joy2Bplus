@@ -1,0 +1,41 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compiler Mads",
+            "type": "shell",
+            "command": "mads",
+            "args": [ "${file}","-o:${fileBasenameNoExtension}.xex","-l:${fileBasenameNoExtension}.lst"],
+            "problemMatcher": []
+        },{
+            "label": "Run Atari800",
+            "type": "shell",
+            "command": "atari800",
+            "args": [ "${fileBasenameNoExtension}.xex"],
+            "problemMatcher": []
+        },{
+            "label": "Run Altirra",
+            "type": "shell",
+            "command": "wine64",
+            "args": [ "/opt/Altirra/Altirra64.exe","${fileBasenameNoExtension}.xex"],
+            "options": {
+                "env": { "WINEDEBUG": "-all" }
+            }
+        },{
+            "label": "Compiler Mads Win",
+            "type": "shell",
+            "command": "C:\\Program files\\mads\\mads.exe",
+            "args": [ "${file}","-o:${fileBasenameNoExtension}.xex","-l:${fileBasenameNoExtension}.lst"],
+            "problemMatcher": []
+        },{
+            "label": "Run Altirra Win",
+            "type": "shell",
+            "command": "C:\\Program files\\Altirra-3.20\\Altirra64.exe",
+            "args": [ "${fileBasenameNoExtension}.xex"],
+            "problemMatcher": []
+        }
+
+    ]
+}
