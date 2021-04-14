@@ -250,11 +250,11 @@ dl
 	.byte $41
 	.word dl
 
-; Diseño de textos
+; Title messages
 title
 	.byte "   TESTER JOY 2B+   "
 author
-	.byte "  POR ASCRNET 2021  "
+	.byte "  BY ASCRNET V2021  "
 
 blankline
 :40	.byte " "
@@ -326,12 +326,12 @@ joy2_3
 :10	.byte " "
 
 messages
-	dta " Buttons "
-	dta "2"*
-	dta " and "
-	dta "3"*
-	dta " will be activated when "
-	dta "  a joystick with support is connected  "
+	.byte " Buttons "
+	.byte "2"*
+	.byte " and "
+	.byte "3"*
+	.byte " will be activated when "
+	.byte "  a joystick with support is connected  "
 
 ; Display list interrupts
 dli

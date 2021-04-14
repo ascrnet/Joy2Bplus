@@ -8,7 +8,7 @@ Some advantages of this project :
 
  - More than 40 [games](https://github.com/ascrnet/Joy2Bplus/wiki/Games) are available and growing in the future
  - Only the joystick needs to be modified by adding a resistor for each button added
- - Compatible with some sega gamepad to use two buttons
+ - Compatible with some SEGA gamepad to use two buttons
  - For developers it can be emulated from Altirra by configuring a custom joystick
  - Modifications of some commercial joysticks are also available
  - A test program is provided for proper testing of all buttons
@@ -41,6 +41,7 @@ Thanks to colleague Mr Robot from [Atariage](https://atariage.com/forums/topic/2
 
 Just follow the steps shown in the picture
 
+
 ## Retro receiver for SEGA
 
 This adaptation is to make compatible this wireless gamepad with Joy 2B+, made by the colleague Eyvind Bernhardsen from [Atariage](https://atariage.com/forums/topic/316068-diy-sega-mega-drive-genesis-adapter/).
@@ -49,3 +50,10 @@ This adaptation is to make compatible this wireless gamepad with Joy 2B+, made b
 
 All the information on how to make the project are in his own [repository](https://github.com/eyvind/sega-adapter/).
 
+
+## Contributors
+
+ - Eyvind Bernhardsen
+ - Bobo Cujo
+ - Playsoft
+ - Pepe
