@@ -39,7 +39,11 @@ Thanks to colleague Mr Robot from [Atariage](https://atariage.com/forums/topic/2
 
 ![joyarcader](https://github.com/ascrnet/TestJoy2B/blob/master/img/arcaderJoy.jpeg)
 
-Just follow the steps shown in the picture
+Just follow the steps shown in the picture. Here is a 1.5c version of the pcb of the same joystick.
+
+![joyarcader](https://github.com/ascrnet/TestJoy2B/blob/master/img/arcaderJoy_v15.png)
+
+collaboration of colleague [Bobo Cujo](https://atariage.com/forums/topic/278884-2-button-joystick/?do=findComment&comment=4828898)
 
 
 ## Retro receiver for SEGA
