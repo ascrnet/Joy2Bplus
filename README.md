@@ -23,7 +23,7 @@ The technical details to proceed to perform the modification are documented [her
 
 ![joy2b](https://github.com/ascrnet/TestJoy2B/blob/master/img/testjoy2b.png)
 
-this is a small program to test the buttons, it was developed in assembler using [MADS](http://mads.atari8.info) and right here is the source code and its [executable](https://github.com/ascrnet/Joy2Bplus/releases).
+This is a small program to test the buttons, it was developed in assembler using [MADS](http://mads.atari8.info) and right here is the source code and its [executable](https://github.com/ascrnet/Joy2Bplus/releases).
 
 Thank you Eyvind Bernhardsen for your improvements to the test program.
 
@@ -33,7 +33,11 @@ Thank you Eyvind Bernhardsen for your improvements to the test program.
 A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available games and how to test them on Altirra emulator
 
 
-## ArcadeR joystick
+## adaptations
+
+Alternative adaptations are shown below :
+
+### ArcadeR joystick
 
 Thanks to colleague Mr Robot from [Atariage](https://atariage.com/forums/topic/278884-2-button-joystick/?do=findComment&comment=4670068) for sharing this small modification to this joystick
 
@@ -46,13 +50,19 @@ Just follow the steps shown in the picture. Here is a 1.5c version of the pcb of
 collaboration of colleague [Bobo Cujo](https://atariage.com/forums/topic/278884-2-button-joystick/?do=findComment&comment=4828898)
 
 
-## Retro receiver for SEGA
+### Retro receiver for SEGA
 
 This adaptation is to make compatible this wireless gamepad with Joy 2B+, made by the colleague Eyvind Bernhardsen from [Atariage](https://atariage.com/forums/topic/316068-diy-sega-mega-drive-genesis-adapter/).
 
 ![adaptersega](https://github.com/ascrnet/TestJoy2B/blob/master/img/adaptersega.jpeg)
 
 All the information on how to make the project are in his own [repository](https://github.com/eyvind/sega-adapter/).
+
+### Adapt nes gamepad
+
+![nes01](https://github.com/ascrnet/TestJoy2B/blob/master/img/nesjoy2b01.jpg)
+
+here are the [directions](https://github.com/ascrnet/Joy2Bplus/wiki/Games) 
 
 
 ## Contributors
