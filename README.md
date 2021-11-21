@@ -33,7 +33,7 @@ Thank you Eyvind Bernhardsen for your improvements to the test program.
 A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available games and how to test them on Altirra emulator
 
 
-## adaptations
+## Adaptations
 
 Alternative adaptations are shown below :
 
@@ -62,7 +62,7 @@ All the information on how to make the project are in his own [repository](https
 
 ![nes01](https://github.com/ascrnet/TestJoy2B/blob/master/img/nesjoy2b01.jpg)
 
-here are the [directions](https://github.com/ascrnet/Joy2Bplus/wiki/Games) 
+here are the [directions](https://github.com/ascrnet/Joy2Bplus/wiki/adapt-nes-gamepad) 
 
 
 ## Contributors
