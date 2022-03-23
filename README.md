@@ -52,7 +52,7 @@ A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available
 
 ## purchase joystick or gamepad
 
-currently there is a seller "" of a ready to use modified gamepad, just visit his online store.
+Currently there is a seller [retrogameboyz.com](https://retrogameboyz.com/products/atari-8-bit-2-button-action-joystick-control-pad-gamepad-xegs-theme) of a ready to use modified gamepad, just visit his online store.
 
 <a name="Adaptations"/>
 
