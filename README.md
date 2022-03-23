@@ -1,13 +1,18 @@
 # Joy 2B+
 
-![joy2b](https://github.com/ascrnet/TestJoy2B/blob/master/img/joy2bplus.png)
-
-##### Table of Contents
+## Table of Contents
+ - [Introduction](#Introduction)
  - [Hardware changes](#Hardwarechanges)
  - [Testing program](#Testingprogram)
  - [Games](#Games)
  - [Adaptations](#Adaptations)
  - [Contributors](#Contributors)
+
+![joy2b](https://github.com/ascrnet/TestJoy2B/blob/master/img/joy2bplus.png)
+
+<a name="Introduction"/>
+
+## Introduction 
 
 This small modification is to adapt two or three buttons to a joystick for ATARI 2600/XL/XE.
 
