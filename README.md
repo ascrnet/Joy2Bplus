@@ -1,14 +1,15 @@
 # Joy 2B+
 
+![joy2b](https://github.com/ascrnet/TestJoy2B/blob/master/img/joy2bplus.png)
+
 ## Table of Contents
  - [Introduction](#Introduction)
  - [Hardware changes](#Hardwarechanges)
  - [Testing program](#Testingprogram)
  - [Games](#Games)
+ - [Purchase](#purchase joystick or gamepad)
  - [Adaptations](#Adaptations)
  - [Contributors](#Contributors)
-
-![joy2b](https://github.com/ascrnet/TestJoy2B/blob/master/img/joy2bplus.png)
 
 <a name="Introduction"/>
 
@@ -46,6 +47,12 @@ Thank you Eyvind Bernhardsen for your improvements to the test program.
 ## Games
 
 A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available games and how to test them on Altirra emulator
+
+<a name="Purchase"/>
+
+## purchase joystick or gamepad
+
+currently there is a seller "" of a ready to use modified gamepad, just visit his online store.
 
 <a name="Adaptations"/>
 
