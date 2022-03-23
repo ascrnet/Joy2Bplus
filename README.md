@@ -21,6 +21,7 @@ Some advantages of this project :
 
  - More than 70 [games](https://github.com/ascrnet/Joy2Bplus/wiki/Games) are available and growing in the future
  - Only the joystick needs to be modified by adding a resistor for each button added
+ - You can buy a ready-to-play joystick
  - Compatible with some SEGA gamepad to use two buttons
  - For developers it can be emulated from Altirra by configuring a custom joystick
  - Modifications of some commercial joysticks are also available
@@ -50,7 +51,7 @@ A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available
 
 <a name="Purchase"/>
 
-## purchase joystick or gamepad
+## Purchase joystick or gamepad
 
 Currently there is a seller [retrogameboyz.com](https://retrogameboyz.com/products/atari-8-bit-2-button-action-joystick-control-pad-gamepad-xegs-theme) of a ready to use modified gamepad, just visit his online store.
 
