@@ -7,7 +7,7 @@
  - [Hardware changes](#Hardwarechanges)
  - [Testing program](#Testingprogram)
  - [Games](#Games)
- - [Purchase](#purchase joystick or gamepad)
+ - [Purchase joystick or gamepad](#purchase)
  - [Adaptations](#Adaptations)
  - [Contributors](#Contributors)
 
