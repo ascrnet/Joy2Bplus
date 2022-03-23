@@ -25,11 +25,13 @@ Some advantages of this project :
  - A test program is provided for proper testing of all buttons
 
 <a name="Hardwarechanges"/>
+
 ## Hardware changes
 
 The technical details to proceed to perform the modification are documented [here](../../wiki/Instructions)
 
 <a name="Testingprogram"/>
+
 ## Testing program
 
 ![joy2b](https://github.com/ascrnet/TestJoy2B/blob/master/img/testjoy2b.png)
@@ -39,11 +41,13 @@ This is a small program to test the buttons, it was developed in assembler using
 Thank you Eyvind Bernhardsen for your improvements to the test program.
 
 <a name="Games"/>
+
 ## Games
 
 A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available games and how to test them on Altirra emulator
 
 <a name="Adaptations"/>
+
 ## Adaptations
 
 Alternative adaptations are shown below :
@@ -76,6 +80,7 @@ All the information on how to make the project are in his own [repository](https
 here are the [directions](https://github.com/ascrnet/Joy2Bplus/wiki/adapt-nes-gamepad) 
 
 <a name="Contributors"/>
+
 ## Contributors
 
  - Eyvind Bernhardsen
