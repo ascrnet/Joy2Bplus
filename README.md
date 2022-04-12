@@ -88,6 +88,15 @@ All the information on how to make the project are in his own [repository](https
 
 here are the [directions](https://github.com/ascrnet/Joy2Bplus/wiki/adapt-nes-gamepad) 
 
+### Sega megadrive gamepad
+
+One of the easiest gamepad to adapt is the 3-button gamepad from sega megadrive.
+
+![megadrive](https://github.com/ascrnet/TestJoy2B/blob/master/img/gpadmega.jpg)
+
+You will only have to remove the chip and make the corresponding connection.
+
+
 <a name="Contributors"/>
 
 ## Contributors
