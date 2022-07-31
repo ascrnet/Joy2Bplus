@@ -47,7 +47,9 @@ Thank you Eyvind Bernhardsen for your improvements to the test program.
 
 ## Games
 
-A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available games and how to test them on Altirra emulator
+A [list](https://github.com/ascrnet/Joy2Bplus/wiki/Games) of currently available games and how to test them on Altirra emulator for ATARI XL-XE
+
+Compatible games for ATARI 2600 with [two buttons](https://atariage.com/forums/topic/158430-rom-hacks-to-support-2-buttons-with-genesis-controllers).
 
 <a name="Purchase"/>
 
