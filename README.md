@@ -1,6 +1,6 @@
 # Joy 2B+
 
-![joy2b](https://github.com/ascrnet/TestJoy2B/blob/master/img/joy2bplus.png)
+![joy2b](img/joy2bplus.png)
 
 ## Table of Contents
  - [Introduction](#Introduction)
@@ -37,7 +37,7 @@ The technical details to proceed to perform the modification are documented [her
 
 ## Testing program
 
-![joy2b](https://github.com/ascrnet/TestJoy2B/blob/master/img/testjoy2b.png)
+![joy2b](img/testjoy2b.png)
 
 This is a small program to test the buttons, it was developed in assembler using [MADS](http://mads.atari8.info) and right here is the source code and its [executable](https://github.com/ascrnet/Joy2Bplus/releases).
 
@@ -67,11 +67,11 @@ Alternative adaptations are shown below :
 
 Thanks to colleague Mr Robot from [Atariage](https://atariage.com/forums/topic/278884-2-button-joystick/?do=findComment&comment=4670068) for sharing this small modification to this joystick
 
-![joyarcader](https://github.com/ascrnet/TestJoy2B/blob/master/img/arcaderJoy.jpeg)
+![joyarcader](img/arcaderJoy.jpeg)
 
 Just follow the steps shown in the picture. Here is a 1.5c version of the pcb of the same joystick.
 
-![joyarcader](https://github.com/ascrnet/TestJoy2B/blob/master/img/arcaderJoy_v15.png)
+![joyarcader](img/arcaderJoy_v15.png)
 
 collaboration of colleague [Bobo Cujo](https://atariage.com/forums/topic/278884-2-button-joystick/?do=findComment&comment=4828898)
 
@@ -80,13 +80,13 @@ collaboration of colleague [Bobo Cujo](https://atariage.com/forums/topic/278884-
 
 This adaptation is to make compatible this wireless gamepad with Joy 2B+, made by the colleague Eyvind Bernhardsen from [Atariage](https://atariage.com/forums/topic/316068-diy-sega-mega-drive-genesis-adapter/).
 
-![adaptersega](https://github.com/ascrnet/TestJoy2B/blob/master/img/adaptersega.jpeg)
+![adaptersega](img/adaptersega.jpeg)
 
 All the information on how to make the project are in his own [repository](https://github.com/eyvind/sega-adapter/).
 
 ### Adapt nes gamepad
 
-![nes01](https://github.com/ascrnet/TestJoy2B/blob/master/img/nesjoy2b01.jpg)
+![nes01](img/nesjoy2b01.jpg)
 
 here are the [directions](https://github.com/ascrnet/Joy2Bplus/wiki/adapt-nes-gamepad) 
 
@@ -94,7 +94,7 @@ here are the [directions](https://github.com/ascrnet/Joy2Bplus/wiki/adapt-nes-ga
 
 One of the easiest gamepad to adapt is the 3-button gamepad from sega megadrive.
 
-![megadrive](https://github.com/ascrnet/TestJoy2B/blob/master/img/gpadmega.jpg)
+![megadrive](img/gpadmega.jpg)
 
 You will only have to remove the chip and make the corresponding connection.
 
