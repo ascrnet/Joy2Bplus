@@ -9,6 +9,7 @@
  - [Games](#Games)
  - [Purchase joystick or gamepad](#purchase)
  - [Adaptations](#Adaptations)
+ - [Other supported joysticks](#suportjoy)
  - [Contributors](#Contributors)
 
 <a name="Introduction"/>
@@ -99,6 +100,13 @@ One of the easiest gamepad to adapt is the 3-button gamepad from sega megadrive.
 You will only have to remove the chip and make the corresponding connection.
 
 If you need more information visit the Atarige [forum](https://forums.atariage.com/topic/333051-i-designed-a-joypad-for-the-xexegs-anyone-with-a-3d-printer-want-to-take-a-crack-at-it/#comment-5028852).
+
+<a name="suportjoy"/>
+###Other supported joysticks
+
+List of other joysticks that use the Joy 2B+ protocol as a second alternative for use.
+
+- [MXPad](http://www.krupkaj.cz/sblog/article_detail.php?itmid=9000035)
 
 <a name="Contributors"/>
 
