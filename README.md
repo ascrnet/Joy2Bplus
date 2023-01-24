@@ -103,7 +103,7 @@ If you need more information visit the Atarige [forum](https://forums.atariage.c
 
 <a name="suportjoy"/>
 
-### Other supported joysticks
+## Other supported joysticks
 
 List of other joysticks that use the Joy 2B+ protocol as a second alternative for use :
 
