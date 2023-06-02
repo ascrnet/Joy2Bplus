@@ -6,6 +6,7 @@
  - [Introduction](#Introduction)
  - [Hardware changes](#Hardwarechanges)
  - [Testing program](#Testingprogram)
+ - [Assembly Programming](#Asmprogram)
  - [Games](#Games)
  - [Purchase joystick or gamepad](#purchase)
  - [Adaptations](#Adaptations)
@@ -20,7 +21,7 @@ This small modification is to adapt two or three buttons to a joystick for ATARI
 
 Some advantages of this project :
 
- - More than 70 [games](https://github.com/ascrnet/Joy2Bplus/wiki/Games) are available and growing in the future
+ - More than 80 [games](https://github.com/ascrnet/Joy2Bplus/wiki/Games) are available and growing in the future
  - Only the joystick needs to be modified by adding a resistor for each button added
  - You can buy a ready-to-play joystick
  - Compatible with some SEGA gamepad to use two buttons
@@ -43,6 +44,36 @@ The technical details to proceed to perform the modification are documented [her
 This is a small program to test the buttons, it was developed in assembler using [MADS](http://mads.atari8.info) and right here is the source code and its [executable](https://github.com/ascrnet/Joy2Bplus/releases).
 
 Thank you Eyvind Bernhardsen for your improvements to the test program.
+
+<a name="Asmprogram"/>
+
+## Assembly Programming
+
+Our colleague Eyvind Bernhardsen presents a universal way to detect this joystick modification:
+
+```
+PADDL0  = $270
+pot_max = $e4
+
+test_button_c
+	lda PADDL0
+	cmp prev_button_c
+	beq not_pressed
+	sta prev_button_c
+	eor #pot_max
+	bne not_pressed
+	; code to handle button press goes here!
+	...
+not_pressed
+	; button wasn't pressed, go do something else
+
+prev_button_c
+	.byte pot_max
+```
+
+(My code calls it "Button C" because that's what it's called on a Megadrive/Genesis controller). You can detect a Joy2B+ or compatible button by checking if prev_button_c ever gets set to anything other than #$e4, and you can read the third button from PADDL1 in the same way.
+
+Note: the code works with a normal joystick because the button is "held down" on startup, and won't be detected until it's "released". 
 
 <a name="Games"/>
 
