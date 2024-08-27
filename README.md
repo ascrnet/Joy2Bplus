@@ -7,6 +7,7 @@
  - [Hardware changes](#Hardwarechanges)
  - [Testing program](#Testingprogram)
  - [Assembly Programming](#Asmprogram)
+ - [Mad-Pascal Programming](#pasprogram)
  - [Games](#Games)
  - [Purchase joystick or gamepad](#purchase)
  - [Adaptations](#Adaptations)
@@ -74,6 +75,16 @@ prev_button_c
 (My code calls it "Button C" because that's what it's called on a Megadrive/Genesis controller). You can detect a Joy2B+ or compatible button by checking if prev_button_c ever gets set to anything other than #$e4, and you can read the third button from PADDL1 in the same way.
 
 Note: the code works with a normal joystick because the button is "held down" on startup, and won't be detected until it's "released". 
+
+<a name="pasprogram"/>
+
+## Mad-Pascal Programming
+
+Also the creator of [Mad-Pascal](https://github.com/tebe6502/Mad-Pascal) made a function to easily use Joy 2B+ (only for a second button).
+
+```
+function fire2: byte;
+```
 
 <a name="Games"/>
 
