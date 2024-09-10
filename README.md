@@ -8,11 +8,11 @@
  - [Testing program](#Testingprogram)
  - [Assembly Programming](#Asmprogram)
  - [Mad-Pascal Programming](#pasprogram)
- - [RetroArch](#RetroArch)
  - [Games](#Games)
  - [Purchase joystick or gamepad](#purchase)
  - [Adaptations](#Adaptations)
  - [Other supported joysticks](#suportjoy)
+ - [RetroArch](#RetroArch)
  - [Contributors](#Contributors)
 
 <a name="Introduction"/>
@@ -87,20 +87,6 @@ Also the creator of [Mad-Pascal](https://github.com/tebe6502/Mad-Pascal) made a 
 function fire2: byte;
 ```
 
-<a name="RetroArch"/>
-
-## RetroArch
-
-With the help of Juan Francisco Roco we now have support in this great emulator, follow the next steps to activate it :
-
-first step upgrade the core :
-
-- Online Updater -> Core Downloader -> Atari - 5200 (Atari800) 
-
-Second step activate the joystick :
-
-- Core Options -> Input -> Controller Hack -> Joy 2B+
-
 <a name="Games"/>
 
 ## Games
@@ -166,6 +152,20 @@ List of other joysticks that use the Joy 2B+ protocol as a second alternative fo
 
 - [MXPad](http://www.krupkaj.cz/sblog/article_detail.php?itmid=9000035)
 - [SNACK](https://forums.atariage.com/topic/323171-snack-snes-atari-controler-kit)
+
+<a name="RetroArch"/>
+
+## RetroArch
+
+With the help of Juan Francisco Roco we now have support in this great emulator, follow the next steps to activate it :
+
+first step upgrade the core :
+
+- Online Updater -> Core Downloader -> Atari - 5200 (Atari800) 
+
+Second step activate the joystick :
+
+- Core Options -> Input -> Controller Hack -> Joy 2B+
 
 <a name="Contributors"/>
 
