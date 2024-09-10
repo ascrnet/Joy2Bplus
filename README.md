@@ -8,6 +8,7 @@
  - [Testing program](#Testingprogram)
  - [Assembly Programming](#Asmprogram)
  - [Mad-Pascal Programming](#pasprogram)
+ - [RetroArch](#RetroArch)
  - [Games](#Games)
  - [Purchase joystick or gamepad](#purchase)
  - [Adaptations](#Adaptations)
@@ -86,6 +87,18 @@ Also the creator of [Mad-Pascal](https://github.com/tebe6502/Mad-Pascal) made a 
 function fire2: byte;
 ```
 
+<a name="RetroArch"/>
+
+## RetroArch
+
+first step upgrade the core :
+
+- Online Updater -> Core Downloader -> Atari - 5200 (Atari800) 
+
+Second step activate the joystick :
+
+- Core Options -> Input -> Controller Hack -> Joy 2B+
+
 <a name="Games"/>
 
 ## Games
@@ -160,3 +173,4 @@ List of other joysticks that use the Joy 2B+ protocol as a second alternative fo
  - Bobo Cujo
  - Playsoft
  - Pepe
+ - Juan Francisco Roco
