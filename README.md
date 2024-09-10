@@ -91,6 +91,8 @@ function fire2: byte;
 
 ## RetroArch
 
+With the help of Juan Francisco Roco we now have support in this great emulator, follow the next steps to activate it :
+
 first step upgrade the core :
 
 - Online Updater -> Core Downloader -> Atari - 5200 (Atari800) 
