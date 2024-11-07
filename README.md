@@ -5,6 +5,7 @@
 ## Table of Contents
  - [Introduction](#Introduction)
  - [Hardware changes](#Hardwarechanges)
+ - [Housing Design](#HousingDesign)
  - [Testing program](#Testingprogram)
  - [Assembly Programming](#Asmprogram)
  - [Mad-Pascal Programming](#pasprogram)
@@ -36,6 +37,12 @@ Some advantages of this project :
 ## Hardware changes
 
 The technical details to proceed to perform the modification are documented [here](../../wiki/Instructions)
+
+<a name="HousingDesign"/>
+
+## Housing Design
+
+Thanks to the collaboration of “Mr.Holub” user of the Atariage forum, he shared his design on [Thingiverse](https://www.thingiverse.com/thing:6817937). 
 
 <a name="Testingprogram"/>
 
