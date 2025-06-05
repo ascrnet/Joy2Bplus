@@ -155,15 +155,6 @@ You will only have to remove the chip and make the corresponding connection.
 
 If you need more information visit the Atarige [forum](https://forums.atariage.com/topic/333051-i-designed-a-joypad-for-the-xexegs-anyone-with-a-3d-printer-want-to-take-a-crack-at-it/#comment-5028852).
 
-<a name="suportjoy"/>
-
-## Other supported joysticks
-
-List of other joysticks that use the Joy 2B+ protocol as a second alternative for use :
-
-- [MXPad](http://www.krupkaj.cz/sblog/article_detail.php?itmid=9000035)
-- [SNACK](https://forums.atariage.com/topic/323171-snack-snes-atari-controler-kit)
-
 <a name="RetroArch"/>
 
 ## RetroArch
@@ -177,6 +168,15 @@ first step upgrade the core :
 Second step activate the joystick :
 
 - Core Options -> Input -> Controller Hack -> Joy 2B+
+
+<a name="suportjoy"/>
+
+## Other supported joysticks
+
+List of other joysticks that use the Joy 2B+ protocol as a second alternative for use :
+
+- [MXPad](http://www.krupkaj.cz/sblog/article_detail.php?itmid=9000035)
+- [SNACK](https://forums.atariage.com/topic/323171-snack-snes-atari-controler-kit)
 
 <a name="Contributors"/>
 
