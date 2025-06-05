@@ -54,6 +54,9 @@ This is a small program to test the buttons, it was developed in assembler using
 
 Thank you Eyvind Bernhardsen for your improvements to the test program.
 
+If you want to make it work in the Altirra emulator you must configure a new joystick in the video we show the steps.
+[![Video](https://img.youtube.com/vi/EOBmjwyS6Fs/0.jpg)](https://www.youtube.com/watch?v=EOBmjwyS6Fs)
+
 <a name="Asmprogram"/>
 
 ## Assembly Programming
