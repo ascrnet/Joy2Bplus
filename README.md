@@ -151,7 +151,7 @@ here are the [directions](https://github.com/ascrnet/Joy2Bplus/wiki/adapt-nes-ga
 
 ### Sega megadrive gamepad
 
-One of the easiest gamepad to adapt is the 3-button gamepad from sega megadrive.
+One of the easiest gamepad to adapt is the 3-button gamepad from Sega Mega Drive.
 
 ![megadrive](img/gpadmega.jpg)
 
@@ -160,6 +160,8 @@ You will only have to remove the chip and make the corresponding connection.
 If you need more information visit the Atarige [forum](https://forums.atariage.com/topic/333051-i-designed-a-joypad-for-the-xexegs-anyone-with-a-3d-printer-want-to-take-a-crack-at-it/#comment-5028852).
 
 Here's another modification for the Sega Mega Drive controller that's also compatible with this project.
+
+---
 
 ![megadrive](img/gpadmega2.png)
 
