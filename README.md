@@ -193,13 +193,13 @@ You will only have to remove the chip and make the corresponding connection.
 
 If you need more information visit the Atarige [forum](https://forums.atariage.com/topic/333051-i-designed-a-joypad-for-the-xexegs-anyone-with-a-3d-printer-want-to-take-a-crack-at-it/#comment-5028852).
 
-Here's another modification for the Sega Mega Drive controller that's also compatible with this project.
-
 ---
 
 <a name="SEGAMD2"/>
 
 ### Sega Mega Drive gamepad
+
+Here's another modification for the Sega Mega Drive controller that's also compatible with this project.
 
 ![megadrive](img/gpadmega2.png)
 
