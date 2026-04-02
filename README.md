@@ -36,7 +36,11 @@ Some advantages of this project :
 
 ## Hardware changes
 
-The technical details to proceed to perform the modification are documented [here](../../wiki/Instructions)
+Here's how it works:
+
+![joy2bplis](img/joy2b.png)
+
+If you need more details about the story and how to do it, go to the [wiki](../../wiki/Instructions) section.
 
 <a name="HousingDesign"/>
 
