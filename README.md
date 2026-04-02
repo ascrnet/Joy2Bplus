@@ -161,7 +161,7 @@ If you need more information visit the Atarige [forum](https://forums.atariage.c
 
 Here's another modification for the Sega Mega Drive controller that's also compatible with this project.
 
-![megadrive](img/gpadmega2.jpg)
+![megadrive](img/gpadmega2.png)
 
 If you need more information visit the Atarige [forum](https://forums.atariage.com/topic/294174-four-button-control-pad/).
 
