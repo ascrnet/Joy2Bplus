@@ -7,16 +7,18 @@
  - [Hardware changes](#Hardwarechanges)
  - [Housing Design](#HousingDesign)
  - [Testing program](#Testingprogram)
- - [Assembly Programming](#Asmprogram)
- - [Mad-Pascal Programming](#pasprogram)
+ - [Programming](#program)
+	- [ATARI Basic](#ABasic)
+	- [Assembly Programming](#Asmprogram)
+	- [Mad-Pascal Programming](#pasprogram)
  - [Games](#Games)
  - [Purchase joystick or gamepad](#purchase)
  - [Adaptations](#Adaptations)
 	- [ArcadeR Joystick](#ArcadeR)
 	- [Retro receiver for SEGA](#RetroSEGA)
 	- [Adapt nes gamepad](#AdaptNES)
-	- [Sega megadrive gamepad](#SEGAMD1)
-	- [Sega megadrive gamepad](#SEGAMD2)
+	- [Sega megadrive gamepad 1](#SEGAMD1)
+	- [Sega megadrive gamepad 2](#SEGAMD2)
  - [Other supported joysticks](#suportjoy)
  - [RetroArch](#RetroArch)
  - [Contributors](#Contributors)
@@ -67,9 +69,29 @@ If you want to make it work in the Altirra emulator you must configure a new joy
 
 [![Video](https://img.youtube.com/vi/EOBmjwyS6Fs/0.jpg)](https://www.youtube.com/watch?v=EOBmjwyS6Fs)
 
+<a name="program"/>
+
+## Programming
+
+Here we will show how to implement this in different programming languages :
+
+### ATARI Basic
+
+<a name="ABasic"/>
+
+Just use the PADDLE function; if it returns 1, the button was pressed; otherwise, it returns 228.
+
+```
+10 GR.0
+20 IF STRIG(0) = 0 THEN ? "BUTTON 1"
+30 IF PADDLE(0) = 1 THEN ? "BUTTON 2"
+40 IF PADDLE(1) = 1 THEN ? "BUTTON 3"
+50 GOTO 20	
+```
+
 <a name="Asmprogram"/>
 
-## Assembly Programming
+### Assembly
 
 Our colleague Eyvind Bernhardsen presents a universal way to detect this joystick modification:
 
@@ -99,7 +121,7 @@ Note: the code works with a normal joystick because the button is "held down" on
 
 <a name="pasprogram"/>
 
-## Mad-Pascal Programming
+### Mad-Pascal
 
 Also the creator of [Mad-Pascal](https://github.com/tebe6502/Mad-Pascal) made a function to easily use Joy 2B+ (only for a second button).
 
@@ -161,7 +183,7 @@ here are the [directions](https://github.com/ascrnet/Joy2Bplus/wiki/adapt-nes-ga
 
 <a name="SEGAMD1"/>
 
-### Sega megadrive gamepad
+### Sega Mega Drive gamepad
 
 One of the easiest gamepad to adapt is the 3-button gamepad from Sega Mega Drive.
 
@@ -176,6 +198,8 @@ Here's another modification for the Sega Mega Drive controller that's also compa
 ---
 
 <a name="SEGAMD2"/>
+
+### Sega Mega Drive gamepad
 
 ![megadrive](img/gpadmega2.png)
 
