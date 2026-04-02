@@ -86,7 +86,7 @@ Just use the PADDLE function; if it returns 1, the button was pressed; otherwise
 20 IF STRIG(0) = 0 THEN ? "BUTTON 1"
 30 IF PADDLE(0) = 1 THEN ? "BUTTON 2"
 40 IF PADDLE(1) = 1 THEN ? "BUTTON 3"
-50 GOTO 20	
+50 GOTO 20
 ```
 
 <a name="Asmprogram"/>
