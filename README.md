@@ -27,7 +27,7 @@ Some advantages of this project :
  - More than 80 [games](https://github.com/ascrnet/Joy2Bplus/wiki/Games) are available and growing in the future
  - Only the joystick needs to be modified by adding a resistor for each button added
  - You can buy a ready-to-play joystick
- - Compatible with some SEGA gamepad to use two buttons
+ - Natively compatible with the 6-button SEGA gamepad for two-button control
  - For developers it can be emulated from Altirra by configuring a custom joystick
  - Modifications of some commercial joysticks are also available
  - A test program is provided for proper testing of all buttons
