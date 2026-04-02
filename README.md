@@ -75,9 +75,9 @@ If you want to make it work in the Altirra emulator you must configure a new joy
 
 Here we will show how to implement this in different programming languages :
 
-### ATARI Basic
-
 <a name="ABasic"/>
+
+### ATARI Basic
 
 Just use the PADDLE function; if it returns 1, the button was pressed; otherwise, it returns 228.
 
@@ -107,7 +107,7 @@ test_button_c
 	eor #pot_max
 	bne not_pressed
 	; code to handle button press goes here!
-	...
+	
 not_pressed
 	; button wasn't pressed, go do something else
 
