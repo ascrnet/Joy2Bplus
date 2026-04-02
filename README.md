@@ -8,17 +8,17 @@
  - [Housing Design](#HousingDesign)
  - [Testing program](#Testingprogram)
  - [Programming](#program)
-	- [ATARI Basic](#ABasic)
-	- [Assembly Programming](#Asmprogram)
-	- [Mad-Pascal Programming](#pasprogram)
+	- [ATARI BASIC](#ABasic)
+	- [Assembly](#Asmprogram)
+	- [Mad-Pascal](#pasprogram)
  - [Games](#Games)
  - [Purchase joystick or gamepad](#purchase)
  - [Adaptations](#Adaptations)
 	- [ArcadeR Joystick](#ArcadeR)
 	- [Retro receiver for SEGA](#RetroSEGA)
-	- [Adapt nes gamepad](#AdaptNES)
-	- [Sega megadrive gamepad 1](#SEGAMD1)
-	- [Sega megadrive gamepad 2](#SEGAMD2)
+	- [Adapt NES gamepad](#AdaptNES)
+	- [Sega Mega Drive gamepad](#SEGAMD1)
+	- [Sega Mega Drive gamepad](#SEGAMD2)
  - [Other supported joysticks](#suportjoy)
  - [RetroArch](#RetroArch)
  - [Contributors](#Contributors)
@@ -77,7 +77,7 @@ Here we will show how to implement this in different programming languages :
 
 <a name="ABasic"/>
 
-### ATARI Basic
+### ATARI BASIC
 
 Just use the PADDLE function; if it returns 1, the button was pressed; otherwise, it returns 228.
 
@@ -175,7 +175,7 @@ All the information on how to make the project are in his own [repository](https
 
 <a name="AdaptNES"/>
 
-### Adapt nes gamepad
+### Adapt NES gamepad
 
 ![nes01](img/nesjoy2b01.jpg)
 
