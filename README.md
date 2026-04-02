@@ -36,7 +36,7 @@ Some advantages of this project :
 
 ## Hardware changes
 
-Here's how it works:
+Here's how it works :
 
 ![joy2bplis](img/joy2b.png)
 
@@ -159,6 +159,12 @@ You will only have to remove the chip and make the corresponding connection.
 
 If you need more information visit the Atarige [forum](https://forums.atariage.com/topic/333051-i-designed-a-joypad-for-the-xexegs-anyone-with-a-3d-printer-want-to-take-a-crack-at-it/#comment-5028852).
 
+Here's another modification for the Sega Mega Drive controller that's also compatible with this project.
+
+![megadrive](img/gpadmega2.jpg)
+
+If you need more information visit the Atarige [forum](https://forums.atariage.com/topic/294174-four-button-control-pad/).
+
 <a name="RetroArch"/>
 
 ## RetroArch
@@ -191,3 +197,4 @@ List of other joysticks that use the Joy 2B+ protocol as a second alternative fo
  - Playsoft
  - Pepe
  - Juan Francisco Roco
+ - Chilly Willy
