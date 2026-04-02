@@ -12,6 +12,11 @@
  - [Games](#Games)
  - [Purchase joystick or gamepad](#purchase)
  - [Adaptations](#Adaptations)
+	- [ArcadeR Joystick](#ArcadeR)
+	- [Retro receiver for SEGA](#RetroSEGA)
+	- [Adapt nes gamepad](#AdaptNES)
+	- [Sega megadrive gamepad](#SEGAMD1)
+	- [Sega megadrive gamepad](#SEGAMD2)
  - [Other supported joysticks](#suportjoy)
  - [RetroArch](#RetroArch)
  - [Contributors](#Contributors)
@@ -122,7 +127,9 @@ Currently there is a seller [retrogameboyz.com](https://retrogameboyz.com/produc
 
 Alternative adaptations are shown below :
 
-### ArcadeR joystick
+<a name="ArcadeR"/>
+
+### ArcadeR Joystick
 
 Thanks to colleague Mr Robot from [Atariage](https://atariage.com/forums/topic/278884-2-button-joystick/?do=findComment&comment=4670068) for sharing this small modification to this joystick
 
@@ -134,6 +141,7 @@ Just follow the steps shown in the picture. Here is a 1.5c version of the pcb of
 
 collaboration of colleague [Bobo Cujo](https://atariage.com/forums/topic/278884-2-button-joystick/?do=findComment&comment=4828898)
 
+<a name="RetroSEGA"/>
 
 ### Retro receiver for SEGA
 
@@ -143,11 +151,15 @@ This adaptation is to make compatible this wireless gamepad with Joy 2B+, made b
 
 All the information on how to make the project are in his own [repository](https://github.com/eyvind/sega-adapter/).
 
+<a name="AdaptNES"/>
+
 ### Adapt nes gamepad
 
 ![nes01](img/nesjoy2b01.jpg)
 
 here are the [directions](https://github.com/ascrnet/Joy2Bplus/wiki/adapt-nes-gamepad) 
+
+<a name="SEGAMD1"/>
 
 ### Sega megadrive gamepad
 
@@ -162,6 +174,8 @@ If you need more information visit the Atarige [forum](https://forums.atariage.c
 Here's another modification for the Sega Mega Drive controller that's also compatible with this project.
 
 ---
+
+<a name="SEGAMD2"/>
 
 ![megadrive](img/gpadmega2.png)
 
